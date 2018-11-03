@@ -3,7 +3,7 @@
 ## Agenda
 
 * Quick intro to IntelliJ
-* Git
+* Git (**Merge**)
 * Syntax (classes, visibility, methods, variable definition, if/else, for loop, try/catch,...)
 * Datatypes (Objects vs primitive, Arrays, Lists, Maps, Iterable)
 * Generics
