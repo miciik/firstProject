@@ -1,7 +1,6 @@
 # firstProject
 
-## Agenda
-
+Agenda
 * Quick intro to IntelliJ
 * Git
 * Syntax (classes, visibility, methods, variable definition, if/else, for loop, try/catch,...)
