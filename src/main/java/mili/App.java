@@ -20,8 +20,11 @@ public class App extends HelloWorldService
 
     public static void main( String[] args )
     {
-        System.out.println( HelloWorldService.getService().greet() );
+        HelloWorldService service = HelloWorldService.getService();
+        System.out.println( service.greet() );
         System.out.println( HelloWorldService.staticGreet() );
-        System.out.println( HelloWorldService.getService().greet() );
+        service = HelloWorldService.getService();
+        System.out.println( service.greet() );
+        System.out.println( testField.greet() );
     }
 }
