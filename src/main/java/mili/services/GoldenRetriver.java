@@ -10,4 +10,8 @@ public class GoldenRetriver extends Dog {
         System.out.println("I am growing!");
     }
 
+    public String toString() {
+        return "This is a golden retriever at " + this.hashCode();
+    }
+
 }

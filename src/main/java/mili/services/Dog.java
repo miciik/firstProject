@@ -3,7 +3,7 @@ package mili.services;
 public abstract class Dog implements Animal {
 
     private final String color;
-    private int nrLegs = DEF_LEGS;
+    private Integer nrLegs = DEF_LEGS;
     public static final int DEF_LEGS = 4;
 
     public Dog(String color) {
@@ -16,7 +16,13 @@ public abstract class Dog implements Animal {
 
 
     @Override
-    public String eat(Food food) {
+    public String eat(Food food) throws FoodException {
+
+        int currentLegs = this.nrLegs;
+
+        if (food == null){
+            throw new FoodException("food is null");
+        }
         if (food.type == Food.FoodType.MEAT && !food.isExpired())
         {
             this.grow();
